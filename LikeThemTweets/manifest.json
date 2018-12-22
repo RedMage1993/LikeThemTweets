@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Like Them Tweets",
+  "description": "Fritz wants you to like them tweets!",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "matches": ["https://twitter.com/*"],
+      "js": ["js/jquery-3.2.1.min.js", "js/likeThemTweets.js"]
+    }
+  ]
+}
